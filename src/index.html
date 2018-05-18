@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello, World!</title>
+    <style>
+        body { margin: 0; }
+        canvas { width: 100%; height: 100% }
+    </style>
+</head>
+<body>
+    <a-scene vr-mode-ui="enabled: false">
+        <a-entity camera="active: true" look-controls wasd-controls position="0 4 15"></a-entity>
+
+        <a-cone static-body color="green" position="-3 0.5 0"></a-cone>
+        <a-sphere dynamic-body color="red" position="2 5 0" radius="1"></a-sphere>
+        <a-box static-body linear-move color="blue" position="11 2.5 0" rotation="0 -90 0" height="5" width="1" depth="1"></a-box>
+
+        <a-plane static-body color="#BCD9F7" rotation="-90 0 0" width="10" height="10"></a-plane>
+
+        <a-sky color="#CDCDCD"></a-sky>
+    </a-scene>
+</body>
+</html>
